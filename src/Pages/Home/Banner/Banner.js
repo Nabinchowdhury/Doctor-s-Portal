@@ -1,11 +1,13 @@
 import React from 'react';
 import chair from '../../../assets/images/chair.png';
+import bg from "../../../assets/images/bg.png"
+import "./Banner.css"
 import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 const Banner = () => {
     return (
-        <div className="hero">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero bg h-screen" >
+            <div className="hero-content flex-col lg:flex-row-reverse" >
                 <img src={chair} className="rounded-lg lg:w-1/2 shadow-2xl" alt='' />
                 <div>
                     <h1 className="text-5xl font-bold">Box Office News!</h1>
@@ -13,7 +15,7 @@ const Banner = () => {
                     <PrimaryButton>Getting Started</PrimaryButton>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
